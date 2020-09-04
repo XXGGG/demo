@@ -1,0 +1,29 @@
+
+{
+    "demoList":[
+        {
+            "id":"0",
+            "name":"【本页】demo - 展示页",
+            "url":"/",
+            "img":"img/homeImg/demo.png",
+            "describe":"（手机可用）专门用来展示小demo或者一些有趣的测试"
+        }
+    ],
+    "testList":[
+        {   "id":"0",
+            "name":"【css3】水滴效果",
+            "url":"/drop",
+            "img":"img/homeImg/drop.png",
+            "describe":"水滴效果，css样式。好玩的效果"
+        }
+    ],
+    "otherList":[
+        {
+            "id":"0",
+            "name":"Veronica",
+            "url":"https://xxggg.gitee.io/Veronica",
+            "img":"img/homeImg/veronica.png",
+            "describe":"简洁的浏览器首页。"
+        }
+    ]
+}
