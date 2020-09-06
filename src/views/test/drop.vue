@@ -11,6 +11,9 @@
 </template>
 
 <script>
+export default({
+    name:'drop',
+})
 </script>
 
 <style scoped>

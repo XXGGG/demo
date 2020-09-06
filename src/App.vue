@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <xxgXxg/>
-    <router-view></router-view>
+    <xxgXxg v-if="this.$route.path != '/'" />
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -12,6 +14,12 @@ export default ({
   components: {
     xxgXxg,
   },
+  created(){
+    console.log(this.$route)
+  },
+  methods:{
+    
+  }
 })
 </script>
 <style>
@@ -21,6 +29,10 @@ export default ({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  /* background-color: #333; */
+}
+#app::-webkit-scrollbar{
+  display: none;
 }
 
 </style>

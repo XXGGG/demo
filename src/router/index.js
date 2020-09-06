@@ -18,11 +18,14 @@ Vue.use(VueRouter)
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // },
-  { path: '/drop',  name: 'drop', component: () => import('../views/test/drop.vue') }
+  { path: '/drop',  name: 'drop', component: () => import('../views/test/drop.vue') },
+  { path: '/grid',  name: 'grid', component: () => import('../views/test/grid.vue') },
+  { path: '/vuex',  name: 'vuex', component: () => import('../views/test/testVuex/vuex.vue') },
+  { path: '/cart',  name: 'cart', component: () => import('../views/test/testVuex/cart.vue') }
 ]
 
 const router = new VueRouter({
-  // mode: 'history',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

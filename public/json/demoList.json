@@ -15,6 +15,18 @@
             "url":"/drop",
             "img":"img/homeImg/drop.png",
             "describe":"水滴效果，css样式。好玩的效果"
+        },
+        {   "id":"1",
+            "name":"【css3】grid",
+            "url":"/grid",
+            "img":"img/homeImg/grid.png",
+            "describe":"grid布局测试"
+        },
+        {   "id":"2",
+            "name":"【Vuex】",
+            "url":"/vuex",
+            "img":"img/homeImg/grid.png",
+            "describe":"lalalal"
         }
     ],
     "otherList":[

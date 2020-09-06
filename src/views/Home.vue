@@ -5,7 +5,7 @@
       
       <div class="apple_nav">
         DEMO - TEST
-        <i class="green apple_i"></i>
+        <i class="green apple_i" @click="shueijiBGC()"></i>
         <i class="yellow apple_i"></i>
         <i class="red apple_i"></i>
       </div>
@@ -93,8 +93,10 @@ export default ({
   align-items: center;
 }
 .explain{
-  width: 80vw;
-  height: 80vh;
+  /* width: 80vw;
+  height: 80vh; */
+  width: 100vw;
+  height: 100vh;
   background-color: #f8f8f8;
   border-radius: 14px;
   box-shadow: 5px 5px 20px -10px #000000;
@@ -111,18 +113,18 @@ export default ({
   font-size: 30px;
   position: relative;
   overflow: hidden;
+  
+  user-select: none;
 }
 .apple_i{
+  display: none;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   position: absolute;
-  top:15px
-}
-@media screen and (max-width:600px) {
-  .apple_i{
-      display: none;
-  }
+  top:15px;
+
+  cursor: pointer;
 }
 .green{
   background-color: rgb(74, 228, 151);
@@ -139,7 +141,8 @@ export default ({
 
 .box{
   width: 100%;
-  height: calc(80vh - 50px);
+  /* height: calc(80vh - 50px); */
+  height: calc(100vh - 50px);
   padding: 30px;
   box-sizing: border-box;
   overflow: auto;
@@ -149,6 +152,7 @@ export default ({
 }
 .h1{
   font-size: 30px;
+  user-select: none;
 }
 
 
@@ -163,14 +167,14 @@ export default ({
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .item{
   width: 100%;
   max-width: 300px;
   min-width: 10px;
-  margin: 20px;
-  min-height: 280px;
+  margin: 10px;
+  min-height: 250px;
   border-radius: 10px;
   float: left;
 }
@@ -195,5 +199,19 @@ export default ({
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+}
+
+
+@media screen and (min-width:600px){
+  .explain{
+    width: 90vw;
+    height: 90vh;
+  }
+  .apple_i{
+    display: block;
+  }
+  .box{
+    height: calc(80vh - 50px);
+  }
 }
 </style>
