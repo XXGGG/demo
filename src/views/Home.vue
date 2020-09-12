@@ -1,13 +1,13 @@
 <template>
-  <div class="home" :style="bgColor">
+  <div class="home" :style="'background-color:#' + bgColor + '05'"  >
 
     <div class="explain">
       
       <div class="apple_nav">
         DEMO - TEST
-        <i class="green apple_i" @click="shueijiBGC()"></i>
-        <i class="yellow apple_i"></i>
-        <i class="red apple_i"></i>
+        <i class="green apple_i" title='随机改变背景颜色' @click="shueijiBGC()"></i>
+        <i class="yellow apple_i" title=''></i>
+        <i class="red apple_i" title='关于我' @click="about()"></i>
       </div>
 
       <div class="box">
@@ -26,7 +26,7 @@
         <hr/>
         <div class="area" >
             <router-link class="item" :to="item.url" v-for="item in testList" :key="item.id">
-              <img :src="item.img" alt="图片">
+              <div class="item_img" :style="'background-image:url(' + item.img + ')' "></div>
               <div class="name">{{item.name}}</div>
               <div class="describe" :title="item.describe">{{item.describe}}</div>
             </router-link>
@@ -66,7 +66,8 @@ export default ({
   },
   methods:{
     shueijiBGC(){
-      this.bgColor = 'background-color:#' +  Math.floor(Math.random() * 255)
+      // this.bgColor = 'background-color:#' +  Math.floor(Math.random() * 255)
+      this.bgColor =  Math.floor(Math.random() * 255)
     },
     getList(){
       this.axios.get('json/demoList.json').then(res => {
@@ -74,6 +75,9 @@ export default ({
         this.testList = res.data.testList
         this.otherList = res.data.otherList
       })
+    },
+    about(){
+      location.href='https://xxggg.gitee.io'
     }
   }
 });
@@ -101,6 +105,7 @@ export default ({
   border-radius: 14px;
   box-shadow: 5px 5px 20px -10px #000000;
   overflow: hidden;
+
 }
 .apple_nav{
   width: 100%;
@@ -141,11 +146,13 @@ export default ({
 
 .box{
   width: 100%;
-  /* height: calc(80vh - 50px); */
   height: calc(100vh - 50px);
   padding: 30px;
   box-sizing: border-box;
   overflow: auto;
+
+  
+ 
 }
 .box::-webkit-scrollbar{
   display: none;
@@ -161,13 +168,17 @@ export default ({
   min-height: 10px;
   box-sizing: border-box;
   text-align: center;
+  margin-bottom:20px ;
   overflow: hidden; 
   /* 清除浮动👆 */
 
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 .item{
   width: 100%;
@@ -177,6 +188,7 @@ export default ({
   min-height: 250px;
   border-radius: 10px;
   float: left;
+  overflow: hidden;
 }
 .item img{
   width: 100%;
@@ -188,6 +200,23 @@ export default ({
   box-shadow: 0px 0px 10px -8px #000000;
   transform: scale(.9);
 }
+.item_img{
+  width: 100%;
+  max-width: 300px;
+  min-width: 10px;
+  height: 200px;
+  border-radius: 10px;
+  background-image: url('../../public/img/homeImg/demo.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  transition: all .5s;
+}
+.item:hover .item_img{
+  transform: scale(0.9);
+}
+
+
 .name{
   margin: 4px 0;
   font-size: 26px;
@@ -202,6 +231,10 @@ export default ({
 }
 
 
+
+</style>
+<style scoped>
+
 @media screen and (min-width:600px){
   .explain{
     width: 90vw;
@@ -211,7 +244,14 @@ export default ({
     display: block;
   }
   .box{
-    height: calc(80vh - 50px);
+    height: calc(90vh - 50px);
+  }
+  .area{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* align-content: center; */
+    /* align-items: center; */
   }
 }
 </style>

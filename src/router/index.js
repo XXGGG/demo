@@ -18,10 +18,15 @@ Vue.use(VueRouter)
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // },
+  { path: '/apple',  name: 'apple', component: () => import('../views/demo/apple/apple.vue') },
+
   { path: '/drop',  name: 'drop', component: () => import('../views/test/drop.vue') },
   { path: '/grid',  name: 'grid', component: () => import('../views/test/grid.vue') },
   { path: '/vuex',  name: 'vuex', component: () => import('../views/test/testVuex/vuex.vue') },
-  { path: '/cart',  name: 'cart', component: () => import('../views/test/testVuex/cart.vue') }
+  { path: '/cart',  name: 'cart', component: () => import('../views/test/testVuex/cart.vue') },
+  { path: '/layout',  name: 'layout', component: () => import('../views/test/layout.vue') },
+  { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/test/sun_moon.vue') },
+  { path: '/text1',  name: 'text1', component: () => import('../views/test/text1.vue') }
 ]
 
 const router = new VueRouter({

@@ -17,7 +17,6 @@ export default({
 </script>
 
 <style scoped>
-@import "../../public/testCSS.css";
 
 .ball{
   width: 80px;
