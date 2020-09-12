@@ -3,30 +3,48 @@
     "demoList":[
         {
             "id":"0",
-            "name":"【本页】demo - 展示页",
-            "url":"/",
-            "img":"img/homeImg/demo.png",
-            "describe":"（手机可用）专门用来展示小demo或者一些有趣的测试"
+            "name":"【仿apple官网】",
+            "url":"/apple",
+            "img":"img/homeImg/apple.png",
+            "describe":"模仿苹果官网"
         }
     ],
     "testList":[
         {   "id":"0",
-            "name":"【css3】水滴效果",
+            "name":"水滴效果",
             "url":"/drop",
             "img":"img/homeImg/drop.png",
-            "describe":"水滴效果，css样式。好玩的效果"
+            "describe":"css3,有趣"
         },
         {   "id":"1",
-            "name":"【css3】grid",
+            "name":"grid布局测试",
             "url":"/grid",
             "img":"img/homeImg/grid.png",
             "describe":"grid布局测试"
         },
         {   "id":"2",
-            "name":"【Vuex】",
+            "name":"Vuex小测试",
             "url":"/vuex",
-            "img":"img/homeImg/grid.png",
-            "describe":"lalalal"
+            "img":"img/homeImg/vuex.png",
+            "describe":"Vuex小测试"
+        },
+        {   "id":"3",
+            "name":"自适应布局小测试",
+            "url":"/layout",
+            "img":"img/homeImg/layout.png",
+            "describe":"自适应布局小测试"
+        },
+        {   "id":"4",
+            "name":"敲代码的日夜",
+            "url":"/sun_moon",
+            "img":"img/homeImg/sun_moon.png",
+            "describe":"css3"
+        },
+        {   "id":"5",
+            "name":"text1",
+            "url":"/text1",
+            "img":"img/homeImg/text1.png",
+            "describe":"css3 background-clip"
         }
     ],
     "otherList":[
