@@ -26,7 +26,8 @@ Vue.use(VueRouter)
   { path: '/cart',  name: 'cart', component: () => import('../views/test/testVuex/cart.vue') },
   { path: '/layout',  name: 'layout', component: () => import('../views/test/layout.vue') },
   { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/test/sun_moon.vue') },
-  { path: '/text1',  name: 'text1', component: () => import('../views/test/text1.vue') }
+  { path: '/text1',  name: 'text1', component: () => import('../views/test/text1.vue') },
+  { path: '/flop',  name: 'flop', component: () => import('../views/test/flop.vue') }
 ]
 
 const router = new VueRouter({
