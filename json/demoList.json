@@ -45,6 +45,12 @@
             "url":"/text1",
             "img":"img/homeImg/text1.png",
             "describe":"css3 background-clip"
+        },
+        {   "id":"6",
+            "name":"翻牌",
+            "url":"/flop",
+            "img":"img/homeImg/flop.png",
+            "describe":"css3"
         }
     ],
     "otherList":[
