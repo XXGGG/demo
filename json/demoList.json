@@ -6,7 +6,7 @@
             "name":"【仿apple官网】",
             "url":"/apple",
             "img":"img/homeImg/apple.png",
-            "describe":"模仿苹果官网"
+            "describe":"模仿苹果官网【未完成】"
         }
     ],
     "testList":[
@@ -14,43 +14,55 @@
             "name":"水滴效果",
             "url":"/drop",
             "img":"img/homeImg/drop.png",
-            "describe":"css3,有趣"
+            "describe":"css3，【可手机观看】"
         },
         {   "id":"1",
             "name":"grid布局测试",
             "url":"/grid",
             "img":"img/homeImg/grid.png",
-            "describe":"grid布局测试"
+            "describe":"grid布局测试，【未适配】（只是小测试）"
         },
         {   "id":"2",
             "name":"Vuex小测试",
             "url":"/vuex",
             "img":"img/homeImg/vuex.png",
-            "describe":"Vuex小测试"
+            "describe":"Vuex小测试，【未适配】（只是小测试）"
         },
         {   "id":"3",
             "name":"自适应布局小测试",
             "url":"/layout",
             "img":"img/homeImg/layout.png",
-            "describe":"自适应布局小测试"
+            "describe":"自适应布局小测试【未完成】（只是小测试）"
         },
         {   "id":"4",
             "name":"敲代码的日夜",
             "url":"/sun_moon",
             "img":"img/homeImg/sun_moon.png",
-            "describe":"css3"
+            "describe":"css3，【桌面】需要鼠标"
         },
         {   "id":"5",
             "name":"text1",
             "url":"/text1",
             "img":"img/homeImg/text1.png",
-            "describe":"css3 background-clip"
+            "describe":"css3，【可手机看】"
         },
         {   "id":"6",
             "name":"翻牌",
             "url":"/flop",
             "img":"img/homeImg/flop.png",
-            "describe":"css3"
+            "describe":"css3，【桌面】（需要鼠标）"
+        },
+        {   "id":"7",
+            "name":"FlexBox",
+            "url":"/FlexBox",
+            "img":"img/homeImg/FlexBox.png",
+            "describe":"Flex，（只是个小测试）"
+        },
+        {   "id":"8",
+            "name":"SpotLight",
+            "url":"/SpotLight",
+            "img":"img/homeImg/SpotLight.png",
+            "describe":"聚光灯"
         }
     ],
     "otherList":[
