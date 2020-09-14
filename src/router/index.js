@@ -27,7 +27,9 @@ Vue.use(VueRouter)
   { path: '/layout',  name: 'layout', component: () => import('../views/test/layout.vue') },
   { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/test/sun_moon.vue') },
   { path: '/text1',  name: 'text1', component: () => import('../views/test/text1.vue') },
-  { path: '/flop',  name: 'flop', component: () => import('../views/test/flop.vue') }
+  { path: '/flop',  name: 'flop', component: () => import('../views/test/flop.vue') },
+  { path: '/FlexBox',  name: 'FlexBox', component: () => import('../views/test/FlexBox.vue') },
+  { path: '/SpotLight',  name: 'SpotLight', component: () => import('../views/test/SpotLight.vue') }
 ]
 
 const router = new VueRouter({

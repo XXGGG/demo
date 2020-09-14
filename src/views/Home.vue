@@ -176,7 +176,6 @@ export default ({
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  align-items: center;
 
   flex-wrap: wrap;
 }
@@ -223,11 +222,11 @@ export default ({
 }
 .describe{
   overflow: hidden;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis;
   white-space: normal;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  display: -webkit-box;
+  display: -webkit-box; */
 }
 
 

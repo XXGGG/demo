@@ -44,6 +44,7 @@ export default({
     font-size: 40px;
     box-shadow: 1px 1px 10px -5px #333;
     font-weight: bold;
+    user-select: none;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.376);
 

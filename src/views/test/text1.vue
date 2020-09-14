@@ -29,6 +29,8 @@ export default {
     background-size: 90%;
     background-repeat: no-repeat;
     animation: move 5s linear infinite;
+
+    user-select: none;
 }
 
 @keyframes move{
