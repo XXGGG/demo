@@ -19,7 +19,9 @@ export default({
 
 <style scoped>
 .body{
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +33,7 @@ export default({
     height: 400px;
     position: relative;
 
+/* 这个是关键：让这个区域有纵深感 */
     perspective: 1000px;
 }
 .cover, .back{
@@ -48,6 +51,7 @@ export default({
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.376);
 
+/* 这个是关键点 - 让后面不显示 */
     backface-visibility: hidden;
 
     transition: all .25s ease-in-out;

@@ -12,7 +12,9 @@ export default {
 
 <style scoped>
 .box{
-    height: 100vh;
+    position:absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +24,7 @@ export default {
 .h1{
     color: transparent;
     /* color: rgba(95, 95, 95, 0.466); */
+    line-height: 60px;
     font-size: 50px;
     font-weight: bold;
     background: linear-gradient(to right,#000,#16d2d8d2,#000);

@@ -4,7 +4,7 @@
     <div class="explain">
       
       <div class="apple_nav">
-        DEMO - TEST
+        前端 - 展示
         <i class="green apple_i" title='随机改变背景颜色' @click="shueijiBGC()"></i>
         <i class="yellow apple_i" title=''></i>
         <i class="red apple_i" title='关于我' @click="about()"></i>
@@ -16,7 +16,17 @@
         <hr/>
         <div class="area" >
             <router-link class="item" :to="item.url" v-for="item in demoList" :key="item.id">
-              <img :src="item.img" alt="图片">
+              <div class="item_img" :style="'background-image:url(' + item.img + ')' "></div>
+              <div class="name">{{item.name}}</div>
+              <div class="describe" :title="item.describe">{{item.describe}}</div>
+            </router-link>
+        </div>
+        <!-- css的东西 -->
+        <h1 class="h1">Css</h1>
+        <hr/>
+        <div class="area" >
+            <router-link class="item" :to="item.url" v-for="item in cssList" :key="item.id">
+              <div class="item_img" :style="'background-image:url(' + item.img + ')' "></div>
               <div class="name">{{item.name}}</div>
               <div class="describe" :title="item.describe">{{item.describe}}</div>
             </router-link>
@@ -36,7 +46,7 @@
         <hr/>
         <div class="area" >
             <a class="item" :href="item.url" v-for="item in otherList" :key="item.id" target="_brank">
-              <img :src="item.img" alt="图片">
+              <div class="item_img" :style="'background-image:url(' + item.img + ')' "></div>
               <div class="name">{{item.name}}</div>
               <div class="describe" :title="item.describe">{{item.describe}}</div>
             </a>
@@ -56,6 +66,7 @@ export default ({
     return {
       bgColor:'',
       demoList:[],
+      cssList:[],
       testList:[],
       otherList:[],
     }
@@ -66,12 +77,12 @@ export default ({
   },
   methods:{
     shueijiBGC(){
-      // this.bgColor = 'background-color:#' +  Math.floor(Math.random() * 255)
-      this.bgColor =  Math.floor(Math.random() * 255)
+      this.bgColor =  Math.floor(Math.random() * 100);
     },
     getList(){
       this.axios.get('json/demoList.json').then(res => {
         this.demoList = res.data.demoList
+        this.cssList = res.data.cssList
         this.testList = res.data.testList
         this.otherList = res.data.otherList
       })
@@ -86,8 +97,9 @@ export default ({
 <style scoped>
 
 .home{
+  position:absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #ffffff;
 
   display: flex;
@@ -168,7 +180,7 @@ export default ({
   min-height: 10px;
   box-sizing: border-box;
   text-align: center;
-  margin-bottom:20px ;
+  margin-bottom:10px ;
   overflow: hidden; 
   /* 清除浮动👆 */
 
@@ -184,21 +196,12 @@ export default ({
   max-width: 300px;
   min-width: 10px;
   margin: 10px;
-  min-height: 250px;
+  min-height: 230px;
   border-radius: 10px;
   float: left;
   overflow: hidden;
 }
-.item img{
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 1px 1px 12px -8px #000000;
-  transition: all .5s;
-}
-.item:hover img{
-  box-shadow: 0px 0px 10px -8px #000000;
-  transform: scale(.9);
-}
+
 .item_img{
   width: 100%;
   max-width: 300px;

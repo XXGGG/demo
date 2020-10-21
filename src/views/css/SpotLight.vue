@@ -13,7 +13,9 @@ export default {
 
 <style scoped>
 .big_box{
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: #222;
     display: flex;
     justify-content: center;

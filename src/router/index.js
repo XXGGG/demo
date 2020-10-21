@@ -10,26 +10,25 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // },
+  
+  // demo
   { path: '/apple',  name: 'apple', component: () => import('../views/demo/apple/apple.vue') },
 
-  { path: '/drop',  name: 'drop', component: () => import('../views/test/drop.vue') },
+  // css
+  { path: '/drop',  name: 'drop', component: () => import('../views/css/drop.vue') },
+  { path: '/flop',  name: 'flop', component: () => import('../views/css/flop.vue') },
+  { path: '/SpotLight',  name: 'SpotLight', component: () => import('../views/css/SpotLight.vue') },
+  { path: '/text1',  name: 'text1', component: () => import('../views/css/text1.vue') },
+  { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/css/sun_moon.vue') },
+  { path: '/text2',  name: 'text2', component: () => import('../views/css/text2.vue') },
+  { path: '/hamburger',  name: 'hamburger', component: () => import('../views/css/hamburger.vue') },
+
+  //test 
   { path: '/grid',  name: 'grid', component: () => import('../views/test/grid.vue') },
+  { path: '/layout',  name: 'layout', component: () => import('../views/test/layout.vue') },
+  { path: '/FlexBox',  name: 'FlexBox', component: () => import('../views/test/FlexBox.vue') },
   { path: '/vuex',  name: 'vuex', component: () => import('../views/test/testVuex/vuex.vue') },
   { path: '/cart',  name: 'cart', component: () => import('../views/test/testVuex/cart.vue') },
-  { path: '/layout',  name: 'layout', component: () => import('../views/test/layout.vue') },
-  { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/test/sun_moon.vue') },
-  { path: '/text1',  name: 'text1', component: () => import('../views/test/text1.vue') },
-  { path: '/flop',  name: 'flop', component: () => import('../views/test/flop.vue') },
-  { path: '/FlexBox',  name: 'FlexBox', component: () => import('../views/test/FlexBox.vue') },
-  { path: '/SpotLight',  name: 'SpotLight', component: () => import('../views/test/SpotLight.vue') }
 ]
 
 const router = new VueRouter({
