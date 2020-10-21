@@ -1,68 +1,82 @@
 
 {
     "demoList":[
-        {
-            "id":"0",
+        {   "id":"0",
             "name":"【仿apple官网】",
             "url":"/apple",
             "img":"img/homeImg/apple.png",
             "describe":"模仿苹果官网【未完成】"
         }
     ],
-    "testList":[
+    "cssList":[
         {   "id":"0",
             "name":"水滴效果",
             "url":"/drop",
             "img":"img/homeImg/drop.png",
-            "describe":"css3，【可手机观看】"
+            "describe":"drop (可手机观看)"
         },
         {   "id":"1",
+            "name":"敲代码的日夜",
+            "url":"/sun_moon",
+            "img":"img/homeImg/sun_moon.png",
+            "describe":"sun_moon (桌面/需要鼠标)"
+        },
+        {   "id":"2",
+            "name":"text1",
+            "url":"/text1",
+            "img":"img/homeImg/text1.png",
+            "describe":"text1 (可手机看)"
+        },
+        {   "id":"3",
+            "name":"翻牌",
+            "url":"/flop",
+            "img":"img/homeImg/flop.png",
+            "describe":"flop (桌面/需要鼠标）"
+        },
+        {   "id":"4",
+            "name":"SpotLight",
+            "url":"/SpotLight",
+            "img":"img/homeImg/SpotLight.png",
+            "describe":"SpotLight - 聚光灯"
+        },
+        {   "id":"5",
+            "name":"text2",
+            "url":"/text2",
+            "img":"img/homeImg/text2.png",
+            "describe":"text2 iPhone12 文字渐入效果"
+        },
+        {   "id":"6",
+            "name":"🍔汉堡菜单",
+            "url":"/hamburger",
+            "img":"img/homeImg/hamburger.png",
+            "describe":"hamburger 苹果 汉堡菜单🍔"
+        }
+    ],
+    "testList":[
+        
+        {   "id":"0",
             "name":"grid布局测试",
             "url":"/grid",
             "img":"img/homeImg/grid.png",
             "describe":"grid布局测试，【未适配】（只是小测试）"
         },
-        {   "id":"2",
+        {   "id":"1",
             "name":"Vuex小测试",
             "url":"/vuex",
             "img":"img/homeImg/vuex.png",
             "describe":"Vuex小测试，【未适配】（只是小测试）"
         },
-        {   "id":"3",
+        {   "id":"2",
             "name":"自适应布局小测试",
             "url":"/layout",
             "img":"img/homeImg/layout.png",
             "describe":"自适应布局小测试【未完成】（只是小测试）"
         },
-        {   "id":"4",
-            "name":"敲代码的日夜",
-            "url":"/sun_moon",
-            "img":"img/homeImg/sun_moon.png",
-            "describe":"css3，【桌面】需要鼠标"
-        },
-        {   "id":"5",
-            "name":"text1",
-            "url":"/text1",
-            "img":"img/homeImg/text1.png",
-            "describe":"css3，【可手机看】"
-        },
-        {   "id":"6",
-            "name":"翻牌",
-            "url":"/flop",
-            "img":"img/homeImg/flop.png",
-            "describe":"css3，【桌面】（需要鼠标）"
-        },
-        {   "id":"7",
+        {   "id":"3",
             "name":"FlexBox",
             "url":"/FlexBox",
             "img":"img/homeImg/FlexBox.png",
             "describe":"Flex，（只是个小测试）"
-        },
-        {   "id":"8",
-            "name":"SpotLight",
-            "url":"/SpotLight",
-            "img":"img/homeImg/SpotLight.png",
-            "describe":"聚光灯"
         }
     ],
     "otherList":[
