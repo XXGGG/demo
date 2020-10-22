@@ -66,6 +66,7 @@ export default {
     width: 100%;
     min-height:200%;
     user-select: none;
+    text-align: center;
 }
 .sticky {
     position: sticky;

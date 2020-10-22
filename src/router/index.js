@@ -22,6 +22,7 @@ Vue.use(VueRouter)
   { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/css/sun_moon.vue') },
   { path: '/text2',  name: 'text2', component: () => import('../views/css/text2.vue') },
   { path: '/hamburger',  name: 'hamburger', component: () => import('../views/css/hamburger.vue') },
+  { path: '/thqby',  name: 'thqby', component: () => import('../views/css/thqby.vue') },
 
   //test 
   { path: '/grid',  name: 'grid', component: () => import('../views/test/grid.vue') },

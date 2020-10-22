@@ -34,6 +34,7 @@ export default {
     background-position: 50% 240px;
     background-size: 100%;
     background-repeat: no-repeat;
+    text-align: center;
 }
 @media screen and (min-width : 1200px) {
     .bg_img{

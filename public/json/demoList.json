@@ -50,6 +50,12 @@
             "url":"/hamburger",
             "img":"img/homeImg/hamburger.png",
             "describe":"hamburger 苹果 汉堡菜单🍔"
+        },
+        {   "id":"7",
+            "name":"天黑请闭眼",
+            "url":"/thqby",
+            "img":"img/homeImg/thqby.png",
+            "describe":"按钮 - 加上切换黑白 - css变数"
         }
     ],
     "testList":[
