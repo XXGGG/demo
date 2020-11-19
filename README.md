@@ -1,19 +1,7 @@
-# vue2
+# vue2-demo
 
-## Project setup
-```
-npm install
-```
+本项目是用vue-cli 3.x版本的脚手架开发的，但是使用的框架是vue2.x
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+主要用来写一些测试，或是好玩的Css
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+>可以算是一个前端作品展示
