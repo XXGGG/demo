@@ -1,5 +1,5 @@
 <template>
-  <div class="bg_img">
+  <div>
     <div class="menu_top">
       <input type="checkbox" id="toggler" />
       <label for="toggler">
@@ -27,20 +27,10 @@ export default {
 </script>
 
 <style>
-.bg_img{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('./../../../public/img/iphone12.png');
-    background-position: 50% 240px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-@media screen and (min-width : 1200px) {
-    .bg_img{
-        background-size: 70%;
-    }
-}
+/* 
+  
+ */
+
 
 /* 顶部菜单栏 */
 .menu_top{
@@ -72,6 +62,7 @@ export default {
     margin-top:80px;
 }
 /* 当多选按钮被按下时*/
+/* + 是 兄弟元素 就是隔壁的label */
 #toggler:checked + label .box span:nth-child(1){
     transform: rotate(45deg);
     top:100px;
@@ -102,13 +93,9 @@ export default {
     top:240px;
     left: 0;
     opacity: 0;
-    transform: scaleY(0);
     transition: all .2s ease-in-out;
-    /* z-index: 1; */
-
     /* 改变中心点 */
     transform-origin: 50% 0;
-
 }
 /* 毛玻璃 */
 .nav_items::after{
@@ -122,7 +109,7 @@ export default {
     z-index: -1;
     filter: blur(50px);
 }
-/* ~ 这个表示兄弟元素 */
+/* ~ 相同父元素的另一个元素 */
 #toggler:checked ~ .nav_items{
     opacity: 1;
     transform: scaleY(1);

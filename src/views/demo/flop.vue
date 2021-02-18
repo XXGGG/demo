@@ -18,6 +18,13 @@ export default({
 </script>
 
 <style scoped>
+/* 
+    背景颜色是由一个网站生成的，先用flex居中
+    然后制作卡片的区域 最关键的css是 perspective 让区域有纵深感
+    
+    其他的卡片色彩 位置都是常规操作
+    这个是关键点 - 让后面不显示 ：backface-visibility: hidden;
+ */
 .body{
     position: absolute;
     width: 100%;
@@ -33,7 +40,7 @@ export default({
     height: 400px;
     position: relative;
 
-/* 这个是关键：让这个区域有纵深感 */
+    /* 这个是关键：让这个区域有纵深感 */
     perspective: 1000px;
 }
 .cover, .back{
@@ -71,8 +78,5 @@ export default({
 .card-contaniner:hover .back{
     transform: rotateY(0deg);
 }
-
-
-
 
 </style>

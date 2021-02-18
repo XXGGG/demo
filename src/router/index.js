@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -12,24 +12,15 @@ Vue.use(VueRouter)
   },
   
   // demo
-  { path: '/apple',  name: 'apple', component: () => import('../views/demo/apple/apple.vue') },
-
-  // css
-  { path: '/drop',  name: 'drop', component: () => import('../views/css/drop.vue') },
-  { path: '/flop',  name: 'flop', component: () => import('../views/css/flop.vue') },
-  { path: '/SpotLight',  name: 'SpotLight', component: () => import('../views/css/SpotLight.vue') },
-  { path: '/text1',  name: 'text1', component: () => import('../views/css/text1.vue') },
-  { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/css/sun_moon.vue') },
-  { path: '/text2',  name: 'text2', component: () => import('../views/css/text2.vue') },
-  { path: '/hamburger',  name: 'hamburger', component: () => import('../views/css/hamburger.vue') },
-  { path: '/thqby',  name: 'thqby', component: () => import('../views/css/thqby.vue') },
-
-  //test 
-  { path: '/grid',  name: 'grid', component: () => import('../views/test/grid.vue') },
-  { path: '/layout',  name: 'layout', component: () => import('../views/test/layout.vue') },
-  { path: '/FlexBox',  name: 'FlexBox', component: () => import('../views/test/FlexBox.vue') },
-  { path: '/vuex',  name: 'vuex', component: () => import('../views/test/testVuex/vuex.vue') },
-  { path: '/cart',  name: 'cart', component: () => import('../views/test/testVuex/cart.vue') },
+  { path: '/drop',  name: 'drop', component: () => import('../views/demo/drop.vue') },
+  { path: '/flop',  name: 'flop', component: () => import('../views/demo/flop.vue') },
+  { path: '/hamburger',  name: 'hamburger', component: () => import('../views/demo/hamburger.vue') },
+  { path: '/Skeleton',  name: 'Skeleton', component: () => import('../views/demo/Skeleton.vue') },
+  { path: '/SpotLight',  name: 'SpotLight', component: () => import('../views/demo/SpotLight.vue') },
+  { path: '/sun_moon',  name: 'sun_moon', component: () => import('../views/demo/sun_moon.vue') },
+  { path: '/text1',  name: 'text1', component: () => import('../views/demo/text1.vue') },
+  { path: '/text2',  name: 'text2', component: () => import('../views/demo/text2.vue') },
+  { path: '/thqby',  name: 'thqby', component: () => import('../views/demo/thqby.vue') },
 ]
 
 const router = new VueRouter({

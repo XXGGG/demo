@@ -1,97 +1,68 @@
 
 {
     "demoList":[
-        {   "id":"0",
-            "name":"【仿apple官网】",
-            "url":"/apple",
-            "img":"img/homeImg/apple.png",
-            "describe":"模仿苹果官网【未完成】"
-        }
-    ],
-    "cssList":[
-        {   "id":"0",
+        {   
             "name":"水滴效果",
             "url":"/drop",
             "img":"img/homeImg/drop.png",
-            "describe":"drop (可手机观看)"
+            "describe":"利用了高斯模糊与动画",
+            "tag":"view"
         },
-        {   "id":"1",
-            "name":"敲代码的日夜",
-            "url":"/sun_moon",
-            "img":"img/homeImg/sun_moon.png",
-            "describe":"sun_moon (桌面/需要鼠标)"
-        },
-        {   "id":"2",
-            "name":"text1",
-            "url":"/text1",
-            "img":"img/homeImg/text1.png",
-            "describe":"text1 (可手机看)"
-        },
-        {   "id":"3",
+        {   
             "name":"翻牌",
             "url":"/flop",
             "img":"img/homeImg/flop.png",
-            "describe":"flop (桌面/需要鼠标）"
+            "describe":"鼠标遇上卡片翻转",
+            "tag":"interaction"
         },
-        {   "id":"4",
-            "name":"SpotLight",
-            "url":"/SpotLight",
-            "img":"img/homeImg/SpotLight.png",
-            "describe":"SpotLight - 聚光灯"
-        },
-        {   "id":"5",
-            "name":"text2",
-            "url":"/text2",
-            "img":"img/homeImg/text2.png",
-            "describe":"text2 iPhone12 文字渐入效果"
-        },
-        {   "id":"6",
-            "name":"🍔汉堡菜单",
+        {  
+            "name":"汉堡菜单",
             "url":"/hamburger",
             "img":"img/homeImg/hamburger.png",
-            "describe":"hamburger 苹果 汉堡菜单🍔"
+            "describe":"x = 切换效果",
+            "tag":"interaction"
         },
-        {   "id":"7",
-            "name":"天黑请闭眼",
+        {  
+            "name":"骨架",
+            "url":"/Skeleton",
+            "img":"img/homeImg/hamburger.png",
+            "describe":"未加载完成的骨架屏",
+            "tag":"view"
+        },
+        {   
+            "name":"敲代码的日夜",
+            "url":"/sun_moon",
+            "img":"img/homeImg/sun_moon.png",
+            "describe":"跟随鼠标",
+            "tag":"interaction"
+        },
+        {   
+            "name":"探照灯-文字",
+            "url":"/text1",
+            "img":"img/homeImg/text1.png",
+            "describe":"照过来照过去展示文字",
+            "tag":"view"
+        },
+        {   
+            "name":"聚光灯-文字",
+            "url":"/SpotLight",
+            "img":"img/homeImg/SpotLight.png",
+            "describe":"聚光灯（类似前面的探照灯）",
+            "tag":"view"
+        },
+        {   
+            "name":"文字渐入效果",
+            "url":"/text2",
+            "img":"img/homeImg/text2.png",
+            "describe":"往下滑渐渐展示文字出来",
+            "tag":"interaction"
+        },
+        {   
+            "name":"按钮效果",
             "url":"/thqby",
             "img":"img/homeImg/thqby.png",
-            "describe":"按钮 - 加上切换黑白 - css变数"
-        }
-    ],
-    "testList":[
-        
-        {   "id":"0",
-            "name":"grid布局测试",
-            "url":"/grid",
-            "img":"img/homeImg/grid.png",
-            "describe":"grid布局测试，【未适配】（只是小测试）"
-        },
-        {   "id":"1",
-            "name":"Vuex小测试",
-            "url":"/vuex",
-            "img":"img/homeImg/vuex.png",
-            "describe":"Vuex小测试，【未适配】（只是小测试）"
-        },
-        {   "id":"2",
-            "name":"自适应布局小测试",
-            "url":"/layout",
-            "img":"img/homeImg/layout.png",
-            "describe":"自适应布局小测试【未完成】（只是小测试）"
-        },
-        {   "id":"3",
-            "name":"FlexBox",
-            "url":"/FlexBox",
-            "img":"img/homeImg/FlexBox.png",
-            "describe":"Flex，（只是个小测试）"
-        }
-    ],
-    "otherList":[
-        {
-            "id":"0",
-            "name":"Veronica",
-            "url":"https://xxggg.gitee.io/Veronica",
-            "img":"img/homeImg/veronica.png",
-            "describe":"简洁的浏览器首页。"
+            "describe":"有滞后效果",
+            "tag":"interaction"
         }
     ]
 }
